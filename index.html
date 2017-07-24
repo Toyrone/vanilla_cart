@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexy box</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+        <header>
+            <nav>
+                <div class="container gridContainer">
+                    <ul>
+                        <li>LOGO</li>
+                    </ul>
+                    <ul>
+                        <li>ITEMS</li>
+                        <li>HELP</li>
+                        <li>HELP</li>
+                        <li>HELP</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="main">
+            <div class="container gridContainer">
+                <div class="col-md-9">
+                    <div class="gridContainer" id="products">
+                        <div class="card" data-name="phone" data-price="1200" data-img="phone.img" data-unit="per Kilo"></div>
+                        <div class="card" data-name="rice" data-price="1200" data-img="rice.png" data-unit="per Kg"></div>
+                        <div class="card" data-name="fish" data-price="800" data-img="fish.png" data-unit="per Kilo"></div>
+                        <div class="card" data-name="garri" data-price="300" data-img="garri.png" data-unit="per Kongo"></div>
+                        <div class="card" data-name="laptop" data-price="8000" data-img="laptop.png" data-unit="per item"></div>
+                        <div class="card" data-name="book" data-price="200" data-img="book.png" data-unit="per item"></div>
+                        <div class="card" data-name="pen" data-price="100" data-img="pen.png" data-unit="per item"></div>
+                        <div class="card" data-name="shoe" data-price="500" data-img="shoe.png" data-unit="per item"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div>
+                            <span id="count"></span>
+                        </div>
+                        <ul id="cartItems"></ul>
+                        <div>
+                            <button id="clear_cart"> Clear Cart</button>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+            document.onreadystatechange = function() {
+                if (document.readyState === "complete") {
+                    app.cartCtrl();
+                }
+            }
+        </script>
+        
+	</body>
+</html>
